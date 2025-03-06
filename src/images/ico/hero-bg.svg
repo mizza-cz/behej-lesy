@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1888" height="680" viewBox="0 0 1888 680">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="1888" height="680" rx="6" transform="translate(-464 -1523)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_4" data-name="Path 4" d="M0-911.336H1888v-1062H0Z" transform="translate(0 1973.336)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Background" transform="translate(464 1523)" clip-path="url(#clip-path)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-464 -1607)" clip-path="url(#clip-path-2)">
+      <path id="Path_1" data-name="Path 1" d="M0-912.337H1888v-1061H0Z" transform="translate(0 1973.337)" fill="#d62c13" fill-rule="evenodd"/>
+      <path id="Path_2" data-name="Path 2" d="M-1150.211-602.048l665-558a614.676,614.676,0,0,1,395-144h1447l-665,558a614.712,614.712,0,0,1-395,144Z" transform="translate(531.211 1664.048)" fill="#b92410"/>
+      <path id="Path_3" data-name="Path 3" d="M-1732.408-2015.443l665-558a614.7,614.7,0,0,1,395-144h1447l-665,558a614.682,614.682,0,0,1-395,144Z" transform="translate(799.908 2316.943)" fill="none" stroke="#b92410" stroke-miterlimit="10" stroke-width="6.417"/>
+    </g>
+  </g>
+</svg>

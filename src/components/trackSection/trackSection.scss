@@ -1,0 +1,27 @@
+.trackSection {
+  margin-bottom: 96px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 48px;
+  }
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-top: 64px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 48px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

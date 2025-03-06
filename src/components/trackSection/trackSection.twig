@@ -1,0 +1,23 @@
+<section class="trackSection">
+  <div class="container">
+    <div class="trackSection__header">
+      <h2 class="text-lg titleDecore">Profil trati</h2>
+      <a href="#" target="_blank" class="btn mb-lg-2 mb-1"
+        ><div class="d-lg-block d-none">Zobrazit na</div>
+        strava.com {% include "@images/chevron-down.svg" %}</a
+      >
+    </div>
+    {% include "@components/trackList/trackList.twig" %}
+    <div class="trackSection__img">
+      <img
+        srcset="/images/ico/graf.svg, images/ico/graf-mob.svg 680w"
+        sizes="(min-width: 1132px) 1132px, (min-width: 800px) 600px, 100vw"
+        src="graf"
+        width="1300"
+        height="300"
+        loading="lazy"
+        alt=""
+      />
+    </div>
+  </div>
+</section>

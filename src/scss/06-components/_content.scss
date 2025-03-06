@@ -1,0 +1,84 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text-xxl {
+  font-size: 64px;
+  line-height: 78px;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+.text-xl {
+  font-size: 54px;
+  line-height: 65px;
+  @include media-breakpoint-down(lg) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.text-lg {
+  font-size: 32px;
+  line-height: 1.5;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+.text-large {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.29px;
+}
+.text-md {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.text-sm {
+  font-size: 18px;
+  line-height: 1.5;
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.text-xxs {
+  font-size: 12px;
+  line-height: 14px;
+}
+.titleDecore {
+  letter-spacing: 0.29px;
+  position: relative;
+  padding-top: 48px;
+  @include media-breakpoint-down(lg){
+    padding-top: 32px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100px;
+    background-color: var(--color-primary);
+  }
+}

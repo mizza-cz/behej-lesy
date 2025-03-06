@@ -1,0 +1,61 @@
+.comparisonSection {
+  margin-bottom: 96px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 48px;
+  }
+  .titleDecore {
+    margin-bottom: 72px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+ 
+
+.comparisonGeneral {
+  padding: 32px 48px;
+  border-radius: 48px 0px;
+  box-shadow: 0px 0px 32px #282e381f;
+  background-color: var(--color-light);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+  svg {
+    width: 24px;
+    height: 29px;
+  }
+  p {
+    letter-spacing: 0.19px;
+  }
+  .tag {
+    background-color: var(--color-primary);
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 24px;
+    padding: 5px 16px;
+    font-family: "Roboto", sans-serif;
+    color: var(--color-light);
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 0px 8px;
+  }
+}
+.comparisonGeneral--main {
+  background-color: var(--color-primary);
+  box-shadow: none;
+  color: var(--color-light);
+  svg {
+    width: 60px;
+    height: 48px;
+  }
+}
+
+ 

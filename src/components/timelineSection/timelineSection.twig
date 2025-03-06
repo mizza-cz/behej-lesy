@@ -1,0 +1,27 @@
+<section class="timelineSection">
+  <div class="container">
+    <div class="row g-lg-6">
+      <div class="col-lg-6">
+        <h4 class="text-lg titleDecore">Umístění v rámci sezóny</h4>
+      </div>
+      <div class="col-lg-6 d-lg-block d-none">
+        <h4 class="text-lg titleDecore">Umístění v historii závodu</h4>
+      </div>
+    </div>
+  </div>
+  <div class="timelineSection__bg">
+    <div class="container">
+      <div class="row g-6 mt-lg-12 mt-0">
+        <div class="col-lg-6 mt-lg-0">
+          {% include "@components/timeline/timeline-2.twig" %}
+        </div>
+        <div class="col-lg-6 mt-lg-0">
+          <div class="col-lg-6 d-lg-none d-block">
+            <h4 class="text-lg titleDecore">Umístění v historii závodu</h4>
+          </div>
+          {% include "@components/timeline/timeline.twig" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

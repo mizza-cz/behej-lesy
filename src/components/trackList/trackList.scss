@@ -1,0 +1,35 @@
+.trackList {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  @include media-breakpoint-down(lg) {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include media-breakpoint-down(lg) {
+      max-width: calc(50% - 32px);
+      flex: 0 0 calc(50% - 32px);
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      gap: 20px;
+    }
+    svg {
+      height: 48px;
+      max-width: 58px;
+    }
+  }
+  &__item-info {
+    letter-spacing: 0.24px;
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      display: block;
+      letter-spacing: 0.19px;
+    }
+  }
+}

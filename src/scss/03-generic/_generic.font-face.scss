@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Helvetica Neue", sans-serif;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueBold.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue", sans-serif;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueRoman.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueRoman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

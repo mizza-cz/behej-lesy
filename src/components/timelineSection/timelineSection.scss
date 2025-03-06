@@ -1,0 +1,41 @@
+.timelineSection {
+  position: relative;
+  margin-bottom: 96px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 48px;
+  }
+  .titleDecore {
+    @include media-breakpoint-down(lg) {
+    }
+  }
+  &__bg {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(50% - 24px);
+      background-color: #f3f3f3cc;
+      opacity: 0.8;
+      height: 100%;
+      top: 0;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+    &::before {
+      left: 0;
+      @include media-breakpoint-down(lg) {
+        top: 0;
+      }
+    }
+    &::after {
+      right: 0;
+      @include media-breakpoint-down(lg) {
+        bottom: 0;
+        top: auto;
+      }
+    }
+  }
+}

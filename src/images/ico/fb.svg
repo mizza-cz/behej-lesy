@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="icon" transform="translate(-1650 -44)">
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(1650 44)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="23" fill="none"/>
+    </g>
+    <g id="Icon-2" data-name="Icon" transform="translate(1663.5 57.443)">
+      <rect id="Area" width="21" height="21" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-3" data-name="Icon" transform="translate(4.901 0)">
+        <path id="_221fc2e0-4099-45e8-9cd3-2dfc66f6e6c7" data-name="221fc2e0-4099-45e8-9cd3-2dfc66f6e6c7" d="M14.2,1.429c-2.973,0-4.716,1.57-4.716,5.147V9.724H5.714v3.77H9.485v9.05h3.77v-9.05h3.016l.755-3.77H13.255V7.213c0-1.347.439-2.014,1.7-2.014h2.067V1.583A23.043,23.043,0,0,0,14.2,1.429Z" transform="translate(-5.714 -1.429)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

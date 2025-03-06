@@ -1,0 +1,69 @@
+/*! purgecss start ignore */
+.accordion-item {
+  border-bottom: 1px solid #e9e9e9;
+}
+.accordion-button {
+  padding: 28px 0 28px 50px;
+  outline: none;
+  box-shadow: none !important;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  img {
+    width: 20px;
+    height: 24px;
+    object-fit: contain;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.19px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 24px;
+    background-color: #dfdfdf;
+    transition: all 0.3s;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.243' height='20' viewBox='0 0 24.243 20'%3E%3Cg id='Icon' transform='translate(2.121)'%3E%3Crect id='Area' width='20' height='20' fill='%23fcfcfc' opacity='0'/%3E%3Cg id='Icon-2' data-name='Icon' transform='translate(0 5)'%3E%3Cpath id='_0d469533-22c1-409e-99fb-f1bb67998d0d' d='M0,0,10,10,20,0' fill='none' stroke='%23282e38' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+    vertical-align: middle;
+  }
+}
+.accordion-button:not(.collapsed) {
+  &::before {
+    background-color: var(--color-primary);
+  }
+  &::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.243' height='20' viewBox='0 0 24.243 20'%3E%3Cg id='Icon' transform='translate(2.121)'%3E%3Crect id='Area' width='20' height='20' fill='%23fcfcfc' opacity='0'/%3E%3Cg id='Icon-2' data-name='Icon' transform='translate(0 5)'%3E%3Cpath id='_0d469533-22c1-409e-99fb-f1bb67998d0d' d='M0,0,10,10,20,0' fill='none' stroke='%23c21b17' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+.accordion-body {
+  padding: 24px 0 48px;
+
+  .g-6 {
+    @include media-breakpoint-down(lg) {
+      --bs-gutter-y: 24px;
+      --bs-gutter-x: 24px;
+    }
+  }
+}
+/*! purgecss end ignore */

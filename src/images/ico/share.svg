@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="icon" transform="translate(-1723 -44)">
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(1723 44)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="23" fill="none"/>
+    </g>
+    <g id="Icon-2" data-name="Icon" transform="translate(1736.714 57.714)">
+      <rect id="Area" width="20" height="20" transform="translate(0.286 0.286)" fill="#fcfcfc" opacity="0"/>
+      <g id="Icon-3" data-name="Icon" transform="translate(1.029 0)">
+        <circle id="_5b97de3e-eee4-4530-ae04-c7ed8aaf185f" data-name="5b97de3e-eee4-4530-ae04-c7ed8aaf185f" cx="3.086" cy="3.086" r="3.086" transform="translate(12.343 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"/>
+        <circle id="b13f8e2c-4e2f-4f0b-a094-d6c16095a7b4" cx="3.086" cy="3.086" r="3.086" transform="translate(0 7.2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"/>
+        <circle id="_34f4a8e3-5f5b-498c-8365-f53d83021963" data-name="34f4a8e3-5f5b-498c-8365-f53d83021963" cx="3.086" cy="3.086" r="3.086" transform="translate(12.343 14.4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"/>
+        <line id="_0549eb76-62e4-4e67-b520-b254e795582a" data-name="0549eb76-62e4-4e67-b520-b254e795582a" x2="7.025" y2="4.094" transform="translate(5.75 11.839)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"/>
+        <line id="_883202a0-189e-4a3a-8c32-763d83375d5d" data-name="883202a0-189e-4a3a-8c32-763d83375d5d" x1="7.015" y2="4.094" transform="translate(5.75 4.639)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

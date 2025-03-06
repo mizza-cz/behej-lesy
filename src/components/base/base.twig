@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }} - {{ project }}</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!--****** Favicon ******-->
+    <!--****** Fonts ******-->
+
+    <!--****** Styles  ******-->
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+    <link rel="stylesheet" media="print" href="css/prints.css" />
+    <!--****** Styles  ******-->
+
+    <!--****** Scripts  ******-->
+    <link
+      rel="preload"
+      href="https://code.jquery.com/jquery-3.6.0.min.js"
+      as="script"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      as="script"
+      crossorigin
+    />
+    <link rel="preload" href="js/scripts.js" as="script" />
+    <!-- ****** scripts ****** -->
+  </head>
+  <body>
+    <div class="base">
+      {% include "@components/heroSection/heroSection.twig" %}
+      <main class="main" aria-label="Hlavní obsah">
+        {% block main %}{% endblock %}
+      </main>
+      {% include "@components/footer/footer.twig" %}
+    </div>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById("comparisonChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "Čas nejlepšího muže",
+            "Čas nejlepší ženy",
+            "Čas závodníka",
+            "Průměrný čas muže",
+            "Průměrný čas ženy",
+          ],
+          datasets: [
+            {
+              label: "",
+              data: [28, 188, 179, 28, 60],
+              borderWidth: 1,
+              backgroundColor: [
+                "#E9573D",
+                "#E9573D",
+                "#C21B17",
+                "#E9573D",
+                "#E9573D",
+              ],
+              hoverBackgroundColor: [
+                "#E9573D",
+                "#E9573D",
+                "#C21B17",
+                "#E9573D",
+                "#E9573D",
+              ],
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              ticks: {
+                maxRotation: 0,
+                minRotation: 0,
+                color: "#282E38", // Цвет текста
+                font: {
+                  size: 11, // Размер шрифта
+                },
+                callback: function (value) {
+                  const label = this.getLabelForValue(value);
+                  const words = label.split(" ");
+                  const middleIndex = Math.ceil(words.length / 2);
+                  const firstLine = words.slice(0, middleIndex).join(" ");
+                  const secondLine = words.slice(middleIndex).join(" ");
+                  return [firstLine, secondLine];
+                },
+              },
+              grid: {
+                display: false,
+              },
+            },
+            y: {
+              beginAtZero: true,
+              grid: {
+                z: -1,
+                display: false,
+              },
+              ticks: {
+                color: "#282E38", // Цвет текста
+                font: {
+                  size: 10, // Размер шрифта
+                },
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              enabled: false,
+            },
+          },
+          hover: {
+            mode: null,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const ctxx = document.getElementById("percentilChart").getContext("2d");
+      new Chart(ctxx, {
+        type: "line",
+        data: {
+          labels: ["text", "text", "text"],
+          datasets: [
+            {
+              label: "Данные",
+              data: [0, 20, 0],
+              fill: true, // Заполнение под графиком
+              backgroundColor: "rgba(233, 87, 61, .8)", // Прозрачный цвет
+              borderWidth: 0,
+              tension: 0.4, // Плавность кривой
+              pointRadius: 0, // Убираем точки на графике
+            },
+          ],
+        },
+        options: {
+          scales: {
+            x: {
+              grid: {
+                display: false,
+              },
+              ticks: { color: "#A3A3A3" },
+            },
+            y: {
+              ticks: { color: "#A3A3A3" },
+              beginAtZero: true,
+            },
+          },
+          plugins: {
+            legend: { display: false },
+          },
+        },
+      });
+    </script>
+    <script defer src="js/scripts.js"></script>
+  </body>
+</html>

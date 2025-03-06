@@ -1,0 +1,325 @@
+<section class="comparisonSection">
+  <div class="container">
+    <h3 class="text-lg titleDecore">Srovnání s ostatními závodníky</h3>
+
+    <div class="accordion" id="accordionExample">
+      <!-- porovnani  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            Porovnání s vítězem / průměr závodníků
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="row g-6">
+              <div class="col-lg-6">
+                <canvas id="comparisonChart"></canvas>
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex flex-column gap-4">
+                  <div class="rectangleItem">
+                    <div class="rectangleItem__stats rectangleItem__stats--win">
+                      <div class="text-md">47</div>
+                    </div>
+                    <p class="text-md">
+                      Kolik závodníku <strong>jste předběhl/la</strong>
+                    </p>
+                  </div>
+                  <div class="rectangleItem">
+                    <div
+                      class="rectangleItem__stats rectangleItem__stats--lose"
+                    >
+                      <div class="text-md">198</div>
+                    </div>
+                    <p>
+                      Kolik závodníku
+                      <strong>vás předběhl/lo </strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- porovnani end  -->
+
+      <!-- general  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <img src="images/ico/lev.svg" alt="" /> Generali Investments FINISH
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div
+              class="row g-6 justify-content-xl-between justify-content-center"
+            >
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral comparisonGeneral--main">
+                  <div class="d-flex gap-4 align-items-center">
+                    {% include "@images/cas.svg" %}
+                    <div class="">
+                      <p>Váš čas:</p>
+                      <div class="text-large fw-bold">01:37:23:09</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral">
+                  <div class="tag">Porovnání s vítězem</div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Výsledný čas:
+                        <span class="d-block fw-bold">00:00:31</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Ztráta na nejlepšího závodníka:
+                        <span class="d-block fw-bold">00:00:31.19</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral">
+                  <div class="tag">Porovnání s průměrným závodníkem</div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Výsledný čas:
+                        <span class="d-block fw-bold">00:00:31</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Ztráta na nejlepšího závodníka:
+                        <span class="d-block fw-bold">00:00:31.19</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- general end  -->
+
+      <!-- Čas na Conti Speed prémii  -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Čas na Conti Speed prémii
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div
+              class="row g-6 justify-content-xl-between justify-content-center"
+            >
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral comparisonGeneral--main">
+                  <div class="d-flex gap-4 align-items-center">
+                    {% include "@images/cas.svg" %}
+                    <div class="">
+                      <p>Váš čas:</p>
+                      <div class="text-large fw-bold">01:37:23:09</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral">
+                  <div class="tag">Porovnání s vítězem</div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Výsledný čas:
+                        <span class="d-block fw-bold">00:00:31</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Ztráta na nejlepšího závodníka:
+                        <span class="d-block fw-bold">00:00:31.19</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-8">
+                <div class="comparisonGeneral">
+                  <div class="tag">Porovnání s průměrným závodníkem</div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Výsledný čas:
+                        <span class="d-block fw-bold">00:00:31</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex gap-3 align-items-center w-100">
+                    {% include "@images/stopky-male.svg" %}
+                    <div class="">
+                      <p>
+                        Ztráta na nejlepšího závodníka:
+                        <span class="d-block fw-bold">00:00:31.19</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Čas na Conti Speed prémii end  -->
+
+      <!-- tempo -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            Průměrné tempo
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="row g-6">
+              <div class="col-lg-6">
+                <div class="rectangleItem">
+                  <div class="rectangleItem__stats">
+                    <div class="text-xxs">35km/h</div>
+                  </div>
+                  <p>
+                    Tímto tempem bys maraton uběhl za <strong>380 minut</strong>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rectangleItem">
+                  <div class="rectangleItem__stats">
+                    <div class="text-xxs">42km/h</div>
+                  </div>
+                  <p>
+                    Tempo vítěze trasy (John Doe) Lorem ipsum dolor sit amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- tempo end  -->
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+            Percentil
+          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <div class="row g-6">
+              <div class="col-lg-6">
+                <canvas id="percentilChart"></canvas>
+              </div>
+              <div class="col-lg-6">
+                <div class="rectangleItem rectangleItem--light">
+                  <div
+                    class=""
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="--value: 90"
+                  ></div>
+                  <p><strong>Lepší než 90% závodníků</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
