@@ -6,13 +6,16 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  @include media-breakpoint-down(xl) {
-    margin-bottom: 104px;
+  @include media-breakpoint-only(lg) {
+    margin-bottom: 60px;
   }
   @include media-breakpoint-down(lg) {
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px;
+    background-color: #d62c13;
+    padding-bottom: 80px;
+    margin-bottom: 0;
   }
   .social {
     @include media-breakpoint-down(lg) {
