@@ -69,3 +69,13 @@
     }
   }
 }
+.logo-desck {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+.logo-mob {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
