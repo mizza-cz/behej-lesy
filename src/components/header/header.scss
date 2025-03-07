@@ -16,6 +16,7 @@
     background-color: #d62c13;
     padding-bottom: 80px;
     margin-bottom: 0;
+    border-radius: 0.375rem 0.375rem 0 0;
   }
   .social {
     @include media-breakpoint-down(lg) {
@@ -31,8 +32,8 @@
     }
     a {
       display: block;
-      height: 110px;
-      max-width: 360px;
+      height: 80px;
+      max-width: 260px;
       @include media-breakpoint-down(lg) {
         height: 68px;
         max-width: 240px;
