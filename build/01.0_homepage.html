@@ -213,14 +213,11 @@
 				<div class="container">
 					<div class="trackSection__header">
 						<h2 class="text-lg titleDecore">Profil trati</h2>
-						<a href="#" target="_blank" class="btn mb-lg-2 mb-1">
-							<div class="d-lg-block d-none">Zobrazit na</div>
-							strava.com <svg xmlns="http://www.w3.org/2000/svg" width="24.24" height="20" viewBox="0 0 24.24 20">
+						<a href="#" target="_blank" class="btn mb-lg-2 mb-1">Zobrazit na Strava <svg xmlns="http://www.w3.org/2000/svg" width="24.24" height="20" viewBox="0 0 24.24 20">
 								<g data-name="Icon">
 									<path data-name="0d469533-22c1-409e-99fb-f1bb67998d0d" d="M2.121 5l10 10 10-10" fill="none" stroke="#282e38" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
 								</g>
-							</svg>
-						</a>
+							</svg></a>
 					</div>
 					<ul class="trackList">
 						<li class="trackList__item">
@@ -446,6 +443,15 @@
 											</div>
 										</div>
 									</div>
+									<div class="accordion-content">
+										<p>
+											Generali Finish je úsek závodu, ve kterém běžci mohli poměřit
+											své síly na <strong>posledních metrech tratě.</strong> V grafech
+											jsou k dispozici údaje o dosažených časech a výkonech
+											jednotlivých závodníků právě v tomto úseku, což umožňuje
+											detailní srovnání jejich finiše.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -588,9 +594,7 @@
 												<div class="rectangleItem__stats">
 													<div class="text-xxs">42km/h</div>
 												</div>
-												<p>
-													Tempo vítěze trasy (John Doe) Lorem ipsum dolor sit amet
-												</p>
+												<p>Tempo vítěze trasy (John Doe) zaběhl maraton za 03:22</p>
 											</div>
 										</div>
 									</div>
@@ -817,7 +821,7 @@
 				labels: [
 					"Čas nejlepšího muže",
 					"Čas nejlepší ženy",
-					"Čas závodníka",
+					"John Doe",
 					"Průměrný čas muže",
 					"Průměrný čas ženy",
 				],
@@ -854,7 +858,7 @@
 							callback: function(value) {
 								const label = this.getLabelForValue(value);
 								const words = label.split(" ");
-								const middleIndex = Math.ceil(words.length / 2);
+								const middleIndex = Math.ceil(words.length / 1.5);
 								const firstLine = words.slice(0, middleIndex).join(" ");
 								const secondLine = words.slice(middleIndex).join(" ");
 								return [firstLine, secondLine];

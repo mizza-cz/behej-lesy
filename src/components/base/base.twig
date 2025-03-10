@@ -64,7 +64,7 @@
           labels: [
             "Čas nejlepšího muže",
             "Čas nejlepší ženy",
-            "Čas závodníka",
+            "John Doe",
             "Průměrný čas muže",
             "Průměrný čas ženy",
           ],
@@ -103,7 +103,7 @@
                 callback: function (value) {
                   const label = this.getLabelForValue(value);
                   const words = label.split(" ");
-                  const middleIndex = Math.ceil(words.length / 2);
+                  const middleIndex = Math.ceil(words.length / 1.5);
                   const firstLine = words.slice(0, middleIndex).join(" ");
                   const secondLine = words.slice(middleIndex).join(" ");
                   return [firstLine, secondLine];
