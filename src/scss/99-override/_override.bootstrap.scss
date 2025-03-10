@@ -3,7 +3,7 @@
   max-width: 86rem !important;
   padding: 0 16px !important;
   @include media-breakpoint-down(lg) {
-    padding: 8px !important;
+    padding: 0 8px !important;
   }
 }
 .g-6 {
@@ -30,10 +30,7 @@
 .text-primary {
   color: var(--color-primary) !important;
 }
-.modal {
-}
-.modal.show {
-}
+
 .modal-content {
   box-shadow: 0px 0px 48px #282e381a;
   border-radius: 16px;
