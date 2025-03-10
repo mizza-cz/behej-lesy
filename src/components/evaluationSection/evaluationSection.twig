@@ -1,4 +1,4 @@
-<section class="evaluationSection">
+<section class="evaluationSection" id="evaluationSection">
   <div class="container">
     <ul class="nav nav-pills" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -11,6 +11,7 @@
           role="tab"
           aria-controls="pills-home"
           aria-selected="true"
+          data-scroll-target="#pills-home"
         >
           {% include "@images/hodnoceni.svg" %} Celkové hodnocení
         </button>
@@ -25,6 +26,7 @@
           role="tab"
           aria-controls="pills-profile"
           aria-selected="false"
+          data-scroll-target="#pills-profile"
         >
           {% include "@images/pohlavi.svg" %} Hodnocení v pohlaví
         </button>
@@ -39,6 +41,7 @@
           role="tab"
           aria-controls="pills-contact"
           aria-selected="false"
+          data-scroll-target="#pills-contact"
         >
           {% include "@images/m18.svg" %} Hodnocení M18
         </button>
@@ -168,3 +171,4 @@
     </div>
   </div>
 </section>
+ 
