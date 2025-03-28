@@ -177,3 +177,30 @@ button.timeline__item {
     text-decoration-color: transparent;
   }
 }
+
+#timelineItems-2 {
+  .modal {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    left: -50%;
+    top: 0;
+    overflow: visible;
+    clear: both !important;
+    @include media-breakpoint-down(lg) {
+      left: -8rem;
+    }
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content {
+    min-width: 18rem;
+    @include media-breakpoint-down(lg) {
+      max-width: 340px;
+    }
+  }
+}
