@@ -100,7 +100,7 @@
                 minRotation: 0,
                 color: "#282E38",
                 font: {
-                  size: 11,
+                  size: window.innerWidth < 600 ? 8 : 11,
                 },
                 callback: function (value) {
                   const label = this.getLabelForValue(value);
@@ -124,7 +124,7 @@
               ticks: {
                 color: "#282E38",
                 font: {
-                  size: 10,
+                  size: window.innerWidth < 600 ? 7 : 10,
                 },
               },
             },
@@ -144,96 +144,6 @@
       });
     </script>
 
-    <!-- <script>
-      const ctxx = document.getElementById("percentilChart").getContext("2d");
-
-      new Chart(ctxx, {
-        type: "line",
-        data: {
-          labels: [
-            " ",
-            "Poslední závodník",
-            "Joe Doe",
-            "Nejrychlejší závodník",
-            " ",
-          ],
-          datasets: [
-            {
-              label: "Rozložení rychlosti",
-              data: [0, 10, 15, 10, 0],
-              fill: true,
-              backgroundColor: "rgba(233, 87, 61, 0.4)",
-              borderWidth: 0,
-              tension: 0.3,
-              pointRadius: 0,
-            },
-            {
-              label: "Joe Doe Line",
-              data: [null, null, 15, null, null],
-              borderColor: "black",
-              borderWidth: 1,
-              pointRadius: 0,
-              pointHoverRadius: 0,
-              type: "line",
-            },
-          ],
-        },
-        options: {
-          animation: false,
-          scales: {
-            x: {
-              ticks: {
-                maxRotation: 0,
-                minRotation: 0,
-                color: "#282E38",
-                font: { size: 11 },
-                callback: function (value) {
-                  const label = this.getLabelForValue(value);
-                  const words = label.split(" ");
-                  const middleIndex = Math.ceil(words.length / 2);
-                  const firstLine = words.slice(0, middleIndex).join(" ");
-                  const secondLine = words.slice(middleIndex).join(" ");
-                  return [firstLine, secondLine];
-                },
-              },
-              grid: {
-                drawTicks: false,
-                color: "rgba(0, 0, 0, 0.1)",
-              },
-            },
-            y: {
-              ticks: {
-                font: { size: 0 },
-              },
-              grid: {
-                drawTicks: false,
-                drawBorder: false,
-              },
-            },
-          },
-          plugins: {
-            legend: { display: false },
-            annotation: {
-              annotations: {
-                poziceText: {
-                  type: "label",
-                  xValue: 2,
-                  yValue: 16,
-                  backgroundColor: "transparent",
-                  content: ["Pozice", "15. místo"],
-                  color: "black",
-                  font: {
-                    size: 12,
-                    weight: "bold",
-                  },
-                  textAlign: "center",
-                },
-              },
-            },
-          },
-        },
-      });
-    </script> -->
     <script>
       const ctxx = document.getElementById("percentilChart").getContext("2d");
 
