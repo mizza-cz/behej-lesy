@@ -178,29 +178,49 @@ button.timeline__item {
   }
 }
 
-#timelineItems-2 {
+.timeline-wrapper {
+  padding-bottom: 40px;
+
+  @include media-breakpoint-down(lg) {
+    background: hsla(0, 0%, 95.3%, 0.8);
+  }
+  .timeline__item {
+    &:last-child::before {
+      display: block;
+    }
+  }
+
+  button.timeline__item::before {
+    display: none !important;
+  }
   .modal {
+    z-index: 7;
     display: block;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    left: -50%;
+    left: 0;
+    right: 0;
     top: 0;
     overflow: visible;
     clear: both !important;
-    @include media-breakpoint-down(lg) {
-      left: -8rem;
+    padding: 0 1rem;
+    @include media-breakpoint-down(sm) {
+      margin-top: -10px;
     }
   }
   .modal-dialog {
     margin: 0;
+    max-width: 440px;
   }
-  .modal-content {
-    min-width: 18rem;
-    @include media-breakpoint-down(lg) {
-      max-width: 340px;
+  .modal-body {
+    @include media-breakpoint-down(sm) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 32px;
+      padding-top: 32px;
     }
   }
 }

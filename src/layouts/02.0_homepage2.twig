@@ -1,0 +1,132 @@
+{% extends "@components/base/base.twig" %} {% set title = "02.0_homepage-2" %}
+{% block main %} {% include
+"@components/evaluationSection/evaluationSection.twig" %} {% include
+"@components/trackSection/trackSection.twig" %} {% include
+"@components/comparisonSection/comparisonSection.twig" %}
+
+<section class="timelineSection">
+  <div class="container">
+    <div class="row g-lg-6">
+      <div class="col-lg-6">
+        <h4 class="text-lg titleDecore">Umístění v rámci sezóny</h4>
+      </div>
+      <div class="col-lg-6 d-lg-block d-none">
+        <h4 class="text-lg titleDecore">Umístění v historii závodu</h4>
+      </div>
+    </div>
+  </div>
+  <div class="timelineSection__bg">
+    <div class="container">
+      <div class="row g-6 mt-lg-12 mt-0">
+        <div class="col-lg-6 mt-lg-0">
+          <div class="timeline-wrapper">
+            <div class="timeline" id="timelineItems-2">
+              <div class="timeline__item clearfix">
+                <div class="timeline__date"><span> 116:0611</span> min/km</div>
+                <a href="#" class="timeline__icon">
+                  <img src="images/ico/hrad.svg" alt="icon" />
+                </a>
+                <div class="timeline__content">
+                  <a href="#" class="text-sm fw-bold text-primary mb-2"
+                    >Karlštejn Penny běh</a
+                  >
+                  <p>1. Místo | 01:48:38</p>
+                  <p>28.05.2023</p>
+                </div>
+              </div>
+              <div class="timeline__item clearfix">
+                <div class="timeline__date"><span> 6:06 </span> min/km</div>
+                <a href="#" class="timeline__icon">
+                  <img src="images/ico/hrad.svg" alt="icon" />
+                </a>
+                <div class="timeline__content">
+                  <a href="#" class="text-sm fw-bold text-primary mb-2"
+                    >Karlštejn Penny běh</a
+                  >
+                  <p>1. Místo | 01:48:38</p>
+                  <p>28.05.2023</p>
+                </div>
+              </div>
+              <div class="timeline__item clearfix">
+                <div class="timeline__date"><span> 6:06 </span> min/km</div>
+                <a href="#" class="timeline__icon">
+                  <img src="images/ico/hrad.svg" alt="icon" />
+                </a>
+                <div class="timeline__content">
+                  <a href="#" class="text-sm fw-bold text-primary mb-2"
+                    >Karlštejn Penny běh</a
+                  >
+                  <p>1. Místo | 01:48:38</p>
+                  <p>28.05.2023</p>
+                </div>
+              </div>
+              <div class="timeline__item clearfix">
+                <div class="timeline__date"><span> 6:06 </span> min/km</div>
+                <a href="#" class="timeline__icon">
+                  <img src="images/ico/hrad.svg" alt="icon" />
+                </a>
+                <div class="timeline__content">
+                  <a href="#" class="text-sm fw-bold text-primary mb-2"
+                    >Karlštejn Penny běh</a
+                  >
+                  <p>1. Místo | 01:48:38</p>
+                  <p>28.05.2023</p>
+                </div>
+              </div>
+              <!-- <button
+                type="button"
+                class="timeline__item clearfix js-fetchHTML"
+                data-fetch-url="./_timelineItems.html"
+                data-fetch-container="#timelineItems-2"
+                data-fetch-limit="5"
+                data-text="Načíst starší záznamy    "
+                data-text-fetching="Načítám..."
+                data-text-error="Omluvte chybu, nepodařilo se načíst"
+              >
+                <div class="timeline__icon">
+                  <span>{% include "@images/chevron-down.svg" %}</span>
+                </div>
+                <div class="timeline__content">
+                  <div class="fw-medium pt-2 text-start mt-1">
+                    Načíst starší záznamy
+                  </div>
+                </div>
+              </button> -->
+            </div>
+            <div class="modal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="modal-title">
+                      <div class="text-large fw-bold">
+                        Přihlásit se na další závody
+                      </div>
+                    </div>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Etiam dui sem, fermentum vitae, sagittis id, malesuada in,
+                      quam.
+                    </p>
+                    <a href="#" class="btn"
+                      >Chci se účastnit {% include "@images/chevron-down.svg"
+                      %}</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-lg-0">
+          <div class="col-lg-6 d-lg-none d-block">
+            <h4 class="text-lg titleDecore">Umístění v historii závodu</h4>
+          </div>
+          {% include "@components/timeline/timeline.twig" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
