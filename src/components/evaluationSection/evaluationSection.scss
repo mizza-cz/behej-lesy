@@ -9,15 +9,15 @@
     gap: 24px;
     flex-wrap: nowrap;
 
-    overflow-x: auto; // горизонтальный скролл
-    white-space: nowrap; // предотвращает перенос кнопок
+    overflow-x: auto;
+    white-space: nowrap;
     scrollbar-width: thin;
     @include media-breakpoint-down(lg) {
       margin: 0 auto;
       position: relative;
       z-index: 999;
       gap: 8px;
-      width: 100%; // Убедимся, что скролл активен
+      width: 100%;
       min-width: 100%;
     }
     @include media-breakpoint-down(sm) {
